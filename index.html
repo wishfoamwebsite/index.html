@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Foam &amp; Furnishing Co. — Grand Launch Coming Soon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAF7F2',
+                        linen: '#EFECE6',
+                        sand: '#E4DDD3',
+                        espresso: '#231F1E',
+                        walnut: '#5A524C',
+                        terracotta: '#C87D55',
+                        terracottaDark: '#B0663F',
+                        amberGold: '#B8860B',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'float-slow': 'floatSlow 12s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        floatSlow: {
+                            '0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '50%': { transform: 'translate(20px, -25px) scale(1.05)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Subtle organic linen weave texture overlay */
+        .linen-texture {
+            background-image: radial-gradient(rgba(35, 31, 30, 0.04) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-ivory text-espresso font-sans antialiased selection:bg-terracotta selection:text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+    <!-- Warm Ambient Background & Subtle Organic Texture -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <!-- Soft Terracotta Warmth Top Left -->
+        <div class="absolute -top-32 -left-24 w-[28rem] h-[28rem] bg-terracotta/15 rounded-full filter blur-3xl animate-float-slow"></div>
+        <!-- Warm Amber Gold Glow Bottom Right -->
+        <div class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] bg-amberGold/10 rounded-full filter blur-3xl animate-float-slow" style="animation-delay: 3s;"></div>
+        <!-- Soft Sand Glow Bottom Left -->
+        <div class="absolute -bottom-32 left-1/4 w-[26rem] h-[26rem] bg-sand/60 rounded-full filter blur-3xl animate-float-slow" style="animation-delay: 6s;"></div>
+        
+        <!-- Fine Organic Texture -->
+        <div class="absolute inset-0 linen-texture opacity-70"></div>
+    </div>
+
+    <!-- Top Navigation / Brand Header -->
+    <header class="relative z-10 w-full max-w-6xl mx-auto px-6 pt-8 pb-4 flex flex-col sm:flex-row justify-between items-center gap-4 opacity-0 animate-fade-in-up" style="animation-delay: 0.1s;">
+        <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+            <!-- Custom Minimalist Tufted Cushion & Comfort Wave SVG Logo -->
+            <div class="w-11 h-11 rounded-2xl bg-linen border border-sand shadow-sm flex items-center justify-center group-hover:border-terracotta/50 group-hover:shadow-md transition-all duration-300">
+                <svg class="w-6 h-6 text-terracotta group-hover:scale-105 transition-transform duration-300" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Soft curved cushion silhouette -->
+                    <path d="M5 9.5C5 7.5 7.5 6 14 6C20.5 6 23 7.5 23 9.5C23 12 22.5 16 23 18.5C23 20.5 20.5 22 14 22C7.5 22 5 20.5 5 18.5C5.5 16 5 12 5 9.5Z" />
+                    <!-- Ergonomic foam wave contour -->
+                    <path d="M7.5 14.5C10 12.8 12 16.2 14.5 14.5C17 12.8 18.5 15.8 20.5 14.2" />
+                    <!-- Subtle tufted button accents -->
+                    <circle cx="10.5" cy="10.5" r="0.75" fill="currentColor" stroke="none" />
+                    <circle cx="17.5" cy="10.5" r="0.75" fill="currentColor" stroke="none" />
+                </svg>
+            </div>
+            <div class="flex flex-col text-left">
+                <span class="font-serif text-2xl sm:text-[26px] font-bold tracking-tight text-espresso leading-none">
+                    Wish Foam
+                </span>
+                <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-walnut mt-1">
+                    &amp; Furnishing Co.
+                </span>
+            </div>
+        </a>
+
+        <!-- Grand Launch Status Badge -->
+        <div class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-linen/90 border border-sand backdrop-blur-sm text-xs font-semibold tracking-wide text-espresso shadow-sm">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-terracotta opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-terracotta"></span>
+            </span>
+            Grand Launch Coming Soon
+        </div>
+    </header>
+
+    <!-- Main Centered Content -->
+    <main class="relative z-10 flex-grow flex flex-col items-center justify-center px-4 sm:px-6 py-10 sm:py-12 text-center max-w-5xl mx-auto w-full">
+        
+        <!-- Craftsmanship Eyebrow Pill -->
+        <div class="opacity-0 animate-fade-in-up mb-5" style="animation-delay: 0.2s;">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-terracotta/10 text-terracottaDark border border-terracotta/25">
+                <svg class="w-3.5 h-3.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                Artisanal Comfort &bull; Thoughtful Living
+            </span>
+        </div>
+
+        <!-- Editorial Serif Headline -->
+        <h1 class="opacity-0 animate-fade-in-up font-serif text-4xl sm:text-6xl md:text-[68px] font-semibold text-espresso tracking-tight mb-6 leading-[1.08] max-w-4xl" style="animation-delay: 0.3s;">
+            Crafting Comfort for Every <br class="hidden sm:inline" />
+            <span class="italic font-normal text-terracotta">Corner of Your Home</span>
+        </h1>
+
+        <!-- Value Proposition Description -->
+        <p class="opacity-0 animate-fade-in-up text-base sm:text-lg text-walnut max-w-2xl mb-10 leading-relaxed font-normal" style="animation-delay: 0.4s;">
+            From high-density orthopedic memory foam mattresses to bespoke sofa upholstery, plush cushions, and curated home furnishings—we are preparing to unveil a new standard of everyday sanctuary.
+        </p>
+
+        <!-- 3-Column Core Offerings Feature Highlights -->
+        <div class="opacity-0 animate-fade-in-up grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl mb-11 text-left" style="animation-delay: 0.45s;">
+            <!-- Feature 1 -->
+            <div class="bg-linen/75 backdrop-blur-md border border-sand/90 rounded-2xl p-5 flex items-start gap-4 hover:border-terracotta/40 transition-colors duration-300 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-ivory border border-sand flex items-center justify-center shrink-0 text-terracotta">
+                    <!-- Mattress / Layers Icon -->
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-serif text-xl font-bold text-espresso leading-snug">Orthopedic &amp; Memory Foam</h2>
+                    <p class="text-xs sm:text-sm text-walnut mt-1 leading-relaxed">Breathable, pressure-relieving mattresses engineered for restorative sleep.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-linen/75 backdrop-blur-md border border-sand/90 rounded-2xl p-5 flex items-start gap-4 hover:border-terracotta/40 transition-colors duration-300 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-ivory border border-sand flex items-center justify-center shrink-0 text-terracotta">
+                    <!-- Upholstery / Swatch Icon -->
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-serif text-xl font-bold text-espresso leading-snug">Bespoke Upholstery</h2>
+                    <p class="text-xs sm:text-sm text-walnut mt-1 leading-relaxed">Custom-cut cushioning, sofa restoration, and tactile performance fabrics.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-linen/75 backdrop-blur-md border border-sand/90 rounded-2xl p-5 flex items-start gap-4 hover:border-terracotta/40 transition-colors duration-300 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-ivory border border-sand flex items-center justify-center shrink-0 text-terracotta">
+                    <!-- Home Furnishings / Cushion Icon -->
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="font-serif text-xl font-bold text-espresso leading-snug">Luxury Home Furnishings</h2>
+                    <p class="text-xs sm:text-sm text-walnut mt-1 leading-relaxed">Plush accent pillows, bolsters, drapery, and tailored living essentials.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live JavaScript Countdown Timer -->
+        <div class="opacity-0 animate-fade-in-up w-full max-w-2xl mb-11" style="animation-delay: 0.55s;">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-walnut mb-3.5">Showroom &amp; Online Store Opens In</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4" aria-label="Countdown Timer">
+                <!-- Days -->
+                <div class="bg-linen/85 backdrop-blur-md border border-sand rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col items-center justify-center group hover:border-terracotta/50 transition-colors duration-300">
+                    <span id="days" class="font-serif text-4xl sm:text-5xl font-bold text-espresso tracking-tight group-hover:text-terracotta transition-colors">00</span>
+                    <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-walnut mt-1.5">Days</span>
+                </div>
+
+                <!-- Hours -->
+                <div class="bg-linen/85 backdrop-blur-md border border-sand rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col items-center justify-center group hover:border-terracotta/50 transition-colors duration-300">
+                    <span id="hours" class="font-serif text-4xl sm:text-5xl font-bold text-espresso tracking-tight group-hover:text-terracotta transition-colors">00</span>
+                    <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-walnut mt-1.5">Hours</span>
+                </div>
+
+                <!-- Minutes -->
+                <div class="bg-linen/85 backdrop-blur-md border border-sand rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col items-center justify-center group hover:border-terracotta/50 transition-colors duration-300">
+                    <span id="minutes" class="font-serif text-4xl sm:text-5xl font-bold text-espresso tracking-tight group-hover:text-terracotta transition-colors">00</span>
+                    <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-walnut mt-1.5">Minutes</span>
+                </div>
+
+                <!-- Seconds -->
+                <div class="bg-linen/85 backdrop-blur-md border border-sand rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col items-center justify-center group hover:border-amberGold/50 transition-colors duration-300">
+                    <span id="seconds" class="font-serif text-4xl sm:text-5xl font-bold text-terracotta tracking-tight">00</span>
+                    <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-walnut mt-1.5">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIP Waitlist / Early-Access Form -->
+        <div class="opacity-0 animate-fade-in-up w-full max-w-lg mx-auto" style="animation-delay: 0.65s;">
+            <div class="mb-3">
+                <span class="inline-block text-xs sm:text-sm font-semibold text-espresso">
+                    Join the VIP Waitlist &mdash; <span class="text-terracotta">Get 15% off your first order on launch day</span>
+                </span>
+            </div>
+
+            <form id="notify-form" novalidate class="relative">
+                <div id="input-wrapper" class="flex flex-col sm:flex-row gap-2 p-1.5 rounded-2xl bg-white/90 border border-sand focus-within:border-terracotta focus-within:ring-4 focus-within:ring-terracotta/15 transition-all duration-300 shadow-lg shadow-espresso/5">
+                    <div class="relative flex-grow flex items-center">
+                        <svg class="w-5 h-5 text-walnut/60 ml-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <input 
+                            type="email" 
+                            id="email-input" 
+                            placeholder="Enter your email for early access..." 
+                            aria-label="Email address"
+                            required
+                            class="w-full bg-transparent text-espresso placeholder-walnut/50 px-3.5 py-3 text-sm sm:text-base focus:outline-none"
+                        >
+                    </div>
+                    <button 
+                        type="submit" 
+                        id="submit-btn"
+                        class="px-6 py-3 rounded-xl bg-espresso hover:bg-terracotta active:scale-[0.98] text-ivory font-semibold text-sm sm:text-base shadow-md transition-all duration-300 flex items-center justify-center gap-2 shrink-0 cursor-pointer"
+                    >
+                        <span>Claim 15% Off</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Dynamic Feedback Message Container (Error / Success) -->
+                <div id="form-feedback" class="mt-3 min-h-[24px] text-sm font-medium transition-all duration-300 flex items-center justify-center gap-1.5" role="alert" aria-live="polite">
+                    <span class="text-walnut/80 text-xs">Priority catalog preview &amp; complimentary fabric swatch guide included.</span>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer with Showroom Inquiries, Social Links & Copyright -->
+    <footer class="relative z-10 w-full max-w-6xl mx-auto px-6 py-8 border-t border-sand/80 flex flex-col md:flex-row items-center justify-between gap-4 text-walnut text-xs sm:text-sm opacity-0 animate-fade-in-up" style="animation-delay: 0.75s;">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <p>&copy; <span id="current-year">2026</span> Wish Foam &amp; Furnishing Co. All rights reserved.</p>
+            <span class="hidden sm:inline text-sand">|</span>
+            <a href="mailto:wishfoam@gmail.com" class="inline-flex items-center gap-1.5 text-espresso hover:text-terracotta font-medium transition-colors">
+                <svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Showroom Inquiries: wishfoam@gmail.com
+            </a>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="flex items-center gap-2.5">
+            <!-- Instagram -->
+            <a href="#instagram" aria-label="Follow Wish Foam & Furnishing Co. on Instagram" class="p-2.5 rounded-xl bg-linen border border-sand text-walnut hover:text-terracotta hover:border-terracotta/50 hover:bg-white transition-all duration-200">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+
+            <!-- Pinterest -->
+            <a href="#pinterest" aria-label="Follow Wish Foam & Furnishing Co. on Pinterest" class="p-2.5 rounded-xl bg-linen border border-sand text-walnut hover:text-terracotta hover:border-terracotta/50 hover:bg-white transition-all duration-200">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.62 0 12.017 0z"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="#facebook" aria-label="Follow Wish Foam & Furnishing Co. on Facebook" class="p-2.5 rounded-xl bg-linen border border-sand text-walnut hover:text-terracotta hover:border-terracotta/50 hover:bg-white transition-all duration-200">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+            </a>
+
+            <!-- WhatsApp / Direct Concierge -->
+            <a href="#whatsapp" aria-label="Message Wish Foam & Furnishing Co. on WhatsApp" class="p-2.5 rounded-xl bg-linen border border-sand text-walnut hover:text-terracotta hover:border-terracotta/50 hover:bg-white transition-all duration-200">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic: Countdown Timer & VIP Waitlist Validation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic copyright year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // ==========================================
+            // 1. LIVE COUNTDOWN TIMER LOGIC
+            // ==========================================
+            const LAUNCH_STORAGE_KEY = 'wish_foam_launch_timestamp';
+            let targetDate = localStorage.getItem(LAUNCH_STORAGE_KEY);
+
+            if (!targetDate || parseInt(targetDate, 10) <= Date.now()) {
+                const daysInMs = 18 * 24 * 60 * 60 * 1000;
+                const hoursInMs = 14 * 60 * 60 * 1000;
+                const minsInMs = 30 * 60 * 1000;
+                targetDate = Date.now() + daysInMs + hoursInMs + minsInMs;
+                localStorage.setItem(LAUNCH_STORAGE_KEY, targetDate.toString());
+            } else {
+                targetDate = parseInt(targetDate, 10);
+            }
+
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            function padZero(num) {
+                return num < 10 ? `0${num}` : `${num}`;
+            }
+
+            function updateCountdown() {
+                const now = Date.now();
+                const distance = targetDate - now;
+
+                if (distance <= 0) {
+                    daysEl.textContent = '00';
+                    hoursEl.textContent = '00';
+                    minutesEl.textContent = '00';
+                    secondsEl.textContent = '00';
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                daysEl.textContent = padZero(days);
+                hoursEl.textContent = padZero(hours);
+                minutesEl.textContent = padZero(minutes);
+                secondsEl.textContent = padZero(seconds);
+            }
+
+            updateCountdown();
+            const timerInterval = setInterval(updateCountdown, 1000);
+
+            // ==========================================
+            // 2. VIP WAITLIST VALIDATION & CONFIRMATION
+            // ==========================================
+            const form = document.getElementById('notify-form');
+            const emailInput = document.getElementById('email-input');
+            const inputWrapper = document.getElementById('input-wrapper');
+            const submitBtn = document.getElementById('submit-btn');
+            const feedbackEl = document.getElementById('form-feedback');
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+            function showFeedback(type, message) {
+                if (type === 'error') {
+                    inputWrapper.classList.remove('border-sand', 'border-emerald-600/60');
+                    inputWrapper.classList.add('border-rose-600/70', 'ring-4', 'ring-rose-500/10');
+                    feedbackEl.innerHTML = `
+                        <svg class="w-4 h-4 text-rose-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-rose-700 text-xs sm:text-sm">${message}</span>
+                    `;
+                } else if (type === 'success') {
+                    inputWrapper.classList.remove('border-sand', 'border-rose-600/70', 'ring-rose-500/10');
+                    inputWrapper.classList.add('border-emerald-600/60', 'ring-4', 'ring-emerald-500/10');
+                    feedbackEl.innerHTML = `
+                        <svg class="w-4 h-4 text-emerald-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-emerald-800 text-xs sm:text-sm">${message}</span>
+                    `;
+                }
+            }
+
+            emailInput.addEventListener('input', () => {
+                inputWrapper.classList.remove('border-rose-600/70', 'ring-rose-500/10');
+                inputWrapper.classList.add('border-sand');
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailValue = emailInput.value.trim();
+
+                if (!emailValue) {
+                    showFeedback('error', 'Please enter your email address to join the VIP waitlist.');
+                    emailInput.focus();
+                    return;
+                }
+
+                if (!emailRegex.test(emailValue)) {
+                    showFeedback('error', 'Please enter a valid email address (e.g., name@example.com).');
+                    emailInput.focus();
+                    return;
+                }
+
+                const originalBtnHTML = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
+                submitBtn.innerHTML = `
+                    <svg class="animate-spin h-4 w-4 text-ivory" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span>Reserving...</span>
+                `;
+
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
+                    submitBtn.innerHTML = `
+                        <svg class="w-4 h-4 text-ivory" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>VIP Reserved</span>
+                    `;
+                    
+                    showFeedback('success', `Welcome to Wish Foam! Your 15% launch code (WISH15) is reserved for ${emailValue}.`);
+                    emailInput.value = '';
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnHTML;
+                        inputWrapper.classList.remove('border-emerald-600/60', 'ring-emerald-500/10');
+                        inputWrapper.classList.add('border-sand');
+                    }, 5000);
+                }, 650);
+            });
+        });
+    </script>
+</body>
+</html>
