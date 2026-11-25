@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return & Refund Policy | Wish Foam & Furnishing Co</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display for warm, trustworthy interior/home furnishings aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for crisp minimalist icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration for Custom Warm Interior Palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FAF8F5',   // Soft off-white main background
+                            100: '#F3EFEA',  // Secondary warm surface
+                            200: '#E6DFD5',  // Subtle borders & dividers
+                        },
+                        charcoal: {
+                            800: '#2C2A29',  // Primary dark text
+                            600: '#57534E',  // Secondary body text
+                            400: '#8C857B',  // Muted captions
+                        },
+                        taupe: {
+                            500: '#8C7A6B',
+                            600: '#726255',
+                            100: '#EFECE8',
+                        },
+                        sage: {
+                            500: '#6B7F6E',
+                            600: '#556758',
+                            100: '#EBF0EC',
+                        },
+                        terracotta: {
+                            500: '#C26D53',
+                            600: '#A85840',
+                            100: '#F9EBE7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream-50 text-charcoal-800 font-sans antialiased selection:bg-terracotta-100 selection:text-terracotta-600">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-cream-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-taupe-500 text-cream-50 flex items-center justify-center shadow-sm group-hover:bg-terracotta-500 transition-colors">
+                    <i data-lucide="armchair" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-lg sm:text-xl font-semibold tracking-tight text-charcoal-800 block leading-none">
+                        Wish Foam &amp; Furnishing Co
+                    </span>
+                    <span class="text-xs text-charcoal-400 tracking-widest uppercase mt-1 block">
+                        Comfort Crafted for Home
+                    </span>
+                </div>
+            </a>
+
+            <!-- Quick Actions -->
+            <div class="flex items-center gap-3">
+                <a href="#contact-support" class="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-charcoal-600 hover:text-terracotta-600 px-3 py-2 rounded-lg transition-colors">
+                    <i data-lucide="help-circle" class="w-4 h-4"></i>
+                    Need Help?
+                </a>
+                <button onclick="openReturnModal()" class="inline-flex items-center gap-2 bg-charcoal-800 hover:bg-terracotta-600 text-cream-50 text-sm font-medium px-4 py-2.5 rounded-xl shadow-sm transition-all cursor-pointer">
+                    <span>Start a Return</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="bg-cream-100 border-b border-cream-200 py-14 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sage-100 text-sage-600 text-xs font-semibold uppercase tracking-wider mb-5">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                <span>Customer Care &amp; Peace of Mind</span>
+            </div>
+            <h1 class="font-serif text-3xl sm:text-5xl font-semibold text-charcoal-800 tracking-tight leading-tight">
+                Return &amp; Refund Policy
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-charcoal-600 max-w-2xl mx-auto leading-relaxed">
+                We want your space to feel just right. Whether you are testing out a new orthopedic mattress or matching upholstery fabrics to your living room light, we’ve made our return process transparent and stress-free.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-charcoal-400">
+                <span class="flex items-center gap-1.5">
+                    <i data-lucide="calendar" class="w-4 h-4 text-taupe-500"></i>
+                    Last Updated: November 2026
+                </span>
+                <span class="hidden sm:inline">&bull;</span>
+                <span class="flex items-center gap-1.5">
+                    <i data-lucide="truck" class="w-4 h-4 text-taupe-500"></i>
+                    Easy Doorstep Pickup Available
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Layout: Sticky Table of Contents + Policy Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+            <!-- Left Sidebar: Sticky Navigation -->
+            <aside class="lg:col-span-4 lg:sticky lg:top-28 bg-white rounded-2xl border border-cream-200 p-6 shadow-sm">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-charcoal-400 mb-4">
+                    Policy Sections
+                </h2>
+                <nav class="space-y-1.5" aria-label="Policy sections">
+                    <a href="#return-windows" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">1</span>
+                        Return Windows &amp; Sleep Trial
+                    </a>
+                    <a href="#eligibility" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">2</span>
+                        Eligibility &amp; Condition Rules
+                    </a>
+                    <a href="#step-by-step" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">3</span>
+                        Step-by-Step Return Process
+                    </a>
+                    <a href="#refund-timelines" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">4</span>
+                        Refund Processing Times
+                    </a>
+                    <a href="#exchanges-damaged" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">5</span>
+                        Exchanges &amp; Damaged Items
+                    </a>
+                    <a href="#contact-support" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-charcoal-600 hover:bg-cream-100 hover:text-charcoal-800 transition-colors">
+                        <span class="w-6 h-6 rounded-lg bg-sage-100 text-sage-600 flex items-center justify-center text-xs font-bold">6</span>
+                        Customer Support Details
+                    </a>
+                </nav>
+
+                <div class="mt-6 pt-6 border-t border-cream-200">
+                    <div class="bg-cream-50 rounded-xl p-4 border border-cream-200">
+                        <p class="text-xs font-semibold text-charcoal-800 mb-1">Have your Order ID ready?</p>
+                        <p class="text-xs text-charcoal-600 mb-3">Initiate a return or exchange request online in under 2 minutes.</p>
+                        <button onclick="openReturnModal()" class="w-full py-2.5 px-4 bg-terracotta-500 hover:bg-terracotta-600 text-white text-xs font-semibold rounded-xl transition-colors cursor-pointer">
+                            Initiate Return Request
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Content Area: Policy Sections -->
+            <div class="lg:col-span-8 space-y-10">
+
+                <!-- SECTION 1: Return Windows -->
+                <section id="return-windows" class="scroll-mt-28 bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-600 flex items-center justify-center">
+                            <i data-lucide="clock" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl font-semibold text-charcoal-800">
+                            1. Return Windows &amp; Sleep Trial
+                        </h2>
+                    </div>
+                    <p class="text-charcoal-600 leading-relaxed mb-6">
+                        Different home furnishings require different amounts of time to experience in your home. We offer tailored return windows depending on the product category:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <!-- Card A: 30-Day Standard Furnishing Policy -->
+                        <div class="rounded-2xl bg-cream-50 border border-cream-200 p-5 flex flex-col justify-between">
+                            <div>
+                                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-taupe-100 text-taupe-600 text-xs font-semibold mb-3">
+                                    Standard Home Furnishings
+                                </div>
+                                <h3 class="font-serif text-xl font-semibold text-charcoal-800 mb-2">
+                                    30-Day Return Window
+                                </h3>
+                                <p class="text-sm text-charcoal-600 leading-relaxed">
+                                    Applies to standard pillows, cushions, sofa throws, curtains, ready-made bedding, and standard foam toppers. Returns must be initiated within <strong>30 calendar days</strong> from the date of delivery.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-cream-200 flex items-center gap-2 text-xs text-taupe-600 font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-sage-600"></i>
+                                <span>Full refund or free size/color exchange</span>
+                            </div>
+                        </div>
+
+                        <!-- Card B: 100-Night Mattress Sleep Trial -->
+                        <div class="rounded-2xl bg-sage-100/60 border border-sage-500/20 p-5 flex flex-col justify-between">
+                            <div>
+                                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sage-600 text-white text-xs font-semibold mb-3">
+                                    Mattresses Only
+                                </div>
+                                <h3 class="font-serif text-xl font-semibold text-charcoal-800 mb-2">
+                                    100-Night Risk-Free Sleep Trial
+                                </h3>
+                                <p class="text-sm text-charcoal-600 leading-relaxed">
+                                    Your body needs time to adjust to new ergonomic support. Sleep on your Wish Foam mattress for at least <strong>21 nights</strong> (break-in period). If it isn’t right for you, return it anytime up to <strong>Night 100</strong>.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-sage-500/20 flex items-center gap-2 text-xs text-sage-600 font-medium">
+                                <i data-lucide="moon" class="w-4 h-4 text-sage-600"></i>
+                                <span>Includes complimentary doorstep pickup</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: Eligibility & Condition Requirements -->
+                <section id="eligibility" class="scroll-mt-28 bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-taupe-100 text-taupe-600 flex items-center justify-center">
+                            <i data-lucide="clipboard-check" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl font-semibold text-charcoal-800">
+                            2. Eligibility &amp; Condition Requirements
+                        </h2>
+                    </div>
+                    <p class="text-charcoal-600 leading-relaxed mb-6">
+                        To ensure hygiene and safety for all customers, returned items must meet the condition guidelines below:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Eligible Column -->
+                        <div class="rounded-2xl border border-sage-500/30 bg-sage-100/30 p-5">
+                            <h3 class="flex items-center gap-2 text-base font-semibold text-sage-600 mb-4">
+                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                Eligible for Return
+                            </h3>
+                            <ul class="space-y-3 text-sm text-charcoal-600">
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-sage-600 mt-2 shrink-0"></span>
+                                    <span><strong>Unwashed &amp; Unused Furnishings:</strong> Cushions, curtains, and linens must be unwashed, unworn, and free from pet hair, smoke, or perfume odors.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-sage-600 mt-2 shrink-0"></span>
+                                    <span><strong>Original Packaging &amp; Tags:</strong> Items must include original brand tags, care labels, zippered storage bags, and protective wrapping.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-sage-600 mt-2 shrink-0"></span>
+                                    <span><strong>Clean Mattresses (100-Night Trial):</strong> Mattresses may be unboxed and slept on, provided they are free of stains, tears, burns, or structural misuse.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Non-Returnable Column -->
+                        <div class="rounded-2xl border border-terracotta-500/30 bg-terracotta-100/40 p-5">
+                            <h3 class="flex items-center gap-2 text-base font-semibold text-terracotta-600 mb-4">
+                                <i data-lucide="x-circle" class="w-5 h-5"></i>
+                                Non-Returnable Items
+                            </h3>
+                            <ul class="space-y-3 text-sm text-charcoal-600">
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-terracotta-600 mt-2 shrink-0"></span>
+                                    <span><strong>Custom Foam Cuts:</strong> High-density foam sheets, window seat pads, or bolsters cut to custom dimensions specified by the buyer.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-terracotta-600 mt-2 shrink-0"></span>
+                                    <span><strong>Bespoke Upholstery &amp; Cut Fabrics:</strong> Custom-stitched sofa covers, tailored drapery, or upholstery fabric cut from the roll by the meter/yard.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-terracotta-600 mt-2 shrink-0"></span>
+                                    <span><strong>Hygiene &amp; Clearance Items:</strong> Opened mattress protectors, pillow protectors, fabric swatch kits, and items marked "Final Sale".</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: Step-by-Step Return Process -->
+                <section id="step-by-step" class="scroll-mt-28 bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center">
+                            <i data-lucide="package-check" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl font-semibold text-charcoal-800">
+                            3. Step-by-Step Return Process
+                        </h2>
+                    </div>
+                    <p class="text-charcoal-600 leading-relaxed mb-6">
+                        Follow these four simple steps to send your item back to us smoothly:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Step 1 -->
+                        <div class="rounded-2xl bg-cream-50 border border-cream-200 p-5 relative">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-charcoal-800 text-cream-50 text-xs font-bold mb-3">
+                                01
+                            </span>
+                            <h3 class="font-semibold text-charcoal-800 text-base mb-1.5">
+                                Submit Return Request
+                            </h3>
+                            <p class="text-sm text-charcoal-600 leading-relaxed">
+                                Click "Start a Return" on this page or email our support team with your Order ID, item name, and reason for return. Attach photos if reporting a defect.
+                            </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="rounded-2xl bg-cream-50 border border-cream-200 p-5 relative">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-charcoal-800 text-cream-50 text-xs font-bold mb-3">
+                                02
+                            </span>
+                            <h3 class="font-semibold text-charcoal-800 text-base mb-1.5">
+                                Approval &amp; Pickup Scheduling
+                            </h3>
+                            <p class="text-sm text-charcoal-600 leading-relaxed">
+                                Within 24 business hours, we will verify eligibility and email you a prepaid return shipping label or confirm a scheduled doorstep courier pickup slot.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="rounded-2xl bg-cream-50 border border-cream-200 p-5 relative">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-charcoal-800 text-cream-50 text-xs font-bold mb-3">
+                                03
+                            </span>
+                            <h3 class="font-semibold text-charcoal-800 text-base mb-1.5">
+                                Pack Securely for Transit
+                            </h3>
+                            <p class="text-sm text-charcoal-600 leading-relaxed">
+                                Place furnishings back in their original packaging with tags attached. For mattresses, no need to re-compress—our logistics partner will wrap it at pickup.
+                            </p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="rounded-2xl bg-cream-50 border border-cream-200 p-5 relative">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-sage-600 text-white text-xs font-bold mb-3">
+                                04
+                            </span>
+                            <h3 class="font-semibold text-charcoal-800 text-base mb-1.5">
+                                Quality Check &amp; Refund
+                            </h3>
+                            <p class="text-sm text-charcoal-600 leading-relaxed">
+                                Once your return arrives at our warehouse and passes a quick quality inspection (1–2 business days), your refund or exchange is immediately released.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4: Refund Processing Times -->
+                <section id="refund-timelines" class="scroll-mt-28 bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-600 flex items-center justify-center">
+                            <i data-lucide="wallet" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl font-semibold text-charcoal-800">
+                            4. Refund Processing Times
+                        </h2>
+                    </div>
+                    <p class="text-charcoal-600 leading-relaxed mb-6">
+                        Once your returned item passes inspection at our facility, we process your refund within <strong>48 hours</strong>. Depending on your original payment method, funds will appear in your account within the following timeframes:
+                    </p>
+
+                    <!-- Responsive Table -->
+                    <div class="overflow-hidden rounded-2xl border border-cream-200">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-cream-100 border-b border-cream-200 text-xs font-semibold uppercase tracking-wider text-charcoal-600">
+                                    <th class="py-3.5 px-4 sm:px-6">Payment Method</th>
+                                    <th class="py-3.5 px-4 sm:px-6">Estimated Credit Time</th>
+                                    <th class="py-3.5 px-4 sm:px-6 hidden sm:table-cell">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-cream-200 text-sm text-charcoal-600">
+                                <tr class="hover:bg-cream-50/70 transition-colors">
+                                    <td class="py-4 px-4 sm:px-6 font-medium text-charcoal-800">Wish Foam Store Credit</td>
+                                    <td class="py-4 px-4 sm:px-6">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sage-100 text-sage-600">
+                                            Instant (Within 2 Hours)
+                                        </span>
+                                    </td>
+                                    <td class="py-4 px-4 sm:px-6 hidden sm:table-cell text-xs text-charcoal-400">Issued via digital gift voucher with no expiration date</td>
+                                </tr>
+                                <tr class="hover:bg-cream-50/70 transition-colors">
+                                    <td class="py-4 px-4 sm:px-6 font-medium text-charcoal-800">UPI / Digital Wallets</td>
+                                    <td class="py-4 px-4 sm:px-6">1 – 3 Business Days</td>
+                                    <td class="py-4 px-4 sm:px-6 hidden sm:table-cell text-xs text-charcoal-400">Credited directly to the source UPI ID or wallet</td>
+                                </tr>
+                                <tr class="hover:bg-cream-50/70 transition-colors">
+                                    <td class="py-4 px-4 sm:px-6 font-medium text-charcoal-800">Credit &amp; Debit Cards</td>
+                                    <td class="py-4 px-4 sm:px-6">5 – 7 Business Days</td>
+                                    <td class="py-4 px-4 sm:px-6 hidden sm:table-cell text-xs text-charcoal-400">Subject to your card-issuing bank’s billing cycle</td>
+                                </tr>
+                                <tr class="hover:bg-cream-50/70 transition-colors">
+                                    <td class="py-4 px-4 sm:px-6 font-medium text-charcoal-800">Net Banking / Bank Transfer</td>
+                                    <td class="py-4 px-4 sm:px-6">5 – 7 Business Days</td>
+                                    <td class="py-4 px-4 sm:px-6 hidden sm:table-cell text-xs text-charcoal-400">Required for Cash-on-Delivery (COD) order refunds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="mt-4 text-xs text-charcoal-400 flex items-center gap-2">
+                        <i data-lucide="info" class="w-4 h-4 text-taupe-500 shrink-0"></i>
+                        <span>Note: Original expedited shipping fees or white-glove installation charges (if selected at checkout) are non-refundable unless the item arrived damaged or defective.</span>
+                    </p>
+                </section>
+
+                <!-- SECTION 5: Exchanges & Damaged/Defective Items -->
+                <section id="exchanges-damaged" class="scroll-mt-28 bg-white rounded-2xl border border-cream-200 p-6 sm:p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-taupe-100 text-taupe-600 flex items-center justify-center">
+                            <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl font-semibold text-charcoal-800">
+                            5. Exchanges &amp; Damaged or Defective Items
+                        </h2>
+                    </div>
+
+                    <div class="space-y-5 text-sm sm:text-base text-charcoal-600 leading-relaxed">
+                        <div class="p-5 rounded-2xl bg-cream-50 border border-cream-200">
+                            <h3 class="font-semibold text-charcoal-800 mb-1.5 flex items-center gap-2">
+                                <i data-lucide="arrow-left-right" class="w-4 h-4 text-taupe-600"></i>
+                                Size, Firmness &amp; Color Exchanges
+                            </h3>
+                            <p class="text-sm text-charcoal-600">
+                                Need a softer pillow loft, a different cushion cover shade, or a firmer mattress feel? We offer <strong>one complimentary exchange</strong> per order within your return window. If the replacement item has a price difference, we will either refund the balance or send a secure payment link for the difference.
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-terracotta-100/40 border border-terracotta-500/25">
+                            <h3 class="font-semibold text-charcoal-800 mb-1.5 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-terracotta-600"></i>
+                                Damaged in Transit or Manufacturing Defects
+                            </h3>
+                            <p class="text-sm text-charcoal-600">
+                                Every piece from Wish Foam &amp; Furnishing Co undergoes strict quality checks, including our custom foam and upholstery orders. However, if your order arrives with transit damage, incorrect dimensions, or a stitching/foam defect:
+                            </p>
+                            <ul class="mt-3 space-y-1.5 text-sm text-charcoal-600 list-disc list-inside">
+                                <li>Report the issue within <strong>48 hours of delivery</strong> with clear photos of the item and outer packaging.</li>
+                                <li>We will arrange a <strong>100% free replacement</strong> or full refund—including for custom-cut foam and bespoke upholstery.</li>
+                                <li>Long-term foam sagging (beyond 1.5 inches) is covered separately under our <strong>5-to-10 Year Mattress &amp; Foam Warranty</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: Customer Support Contact Details -->
+                <section id="contact-support" class="scroll-mt-28 bg-charcoal-800 text-cream-50 rounded-2xl p-6 sm:p-8 shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-charcoal-600">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-terracotta-500 block mb-1">
+                                We’re Here to Help
+                            </span>
+                            <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-cream-50">
+                                6. Customer Support Contact
+                            </h2>
+                            <p class="text-sm text-cream-200/80 mt-1">
+                                Questions about foam density, mattress trial eligibility, or an active return? Reach out to our home comfort specialists.
+                            </p>
+                        </div>
+                        <button onclick="openReturnModal()" class="shrink-0 inline-flex items-center justify-center gap-2 bg-terracotta-500 hover:bg-terracotta-600 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors cursor-pointer">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                            <span>Open Return Form</span>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-6">
+                        <!-- Email Support -->
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                            <div class="w-9 h-9 rounded-lg bg-terracotta-500/20 text-terracotta-500 flex items-center justify-center mb-3">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="text-xs uppercase tracking-wider text-cream-200/60 font-semibold">Email Support</h3>
+                            <p class="text-sm font-medium text-cream-50 mt-1">care@wishfoamfurnishing.com</p>
+                            <p class="text-xs text-cream-200/60 mt-1">Replies within 4 business hours</p>
+                        </div>
+
+                        <!-- Phone & WhatsApp -->
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                            <div class="w-9 h-9 rounded-lg bg-sage-500/20 text-sage-500 flex items-center justify-center mb-3">
+                                <i data-lucide="phone-call" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="text-xs uppercase tracking-wider text-cream-200/60 font-semibold">Phone &amp; WhatsApp</h3>
+                            <p class="text-sm font-medium text-cream-50 mt-1">+1 (800) 555-9474</p>
+                            <p class="text-xs text-cream-200/60 mt-1">Mon – Sat, 9:00 AM – 7:00 PM</p>
+                        </div>
+
+                        <!-- Return Warehouse -->
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                            <div class="w-9 h-9 rounded-lg bg-taupe-500/20 text-taupe-100 flex items-center justify-center mb-3">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="text-xs uppercase tracking-wider text-cream-200/60 font-semibold">Returns &amp; Studio Hub</h3>
+                            <p class="text-sm font-medium text-cream-50 mt-1">420 Artisan Loom Way, Suite B</p>
+                            <p class="text-xs text-cream-200/60 mt-1">Walk-in returns accepted with RMA</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cream-100 border-t border-cream-200 py-10 mt-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-charcoal-400">
+            <div class="flex items-center gap-2">
+                <span class="font-serif font-semibold text-charcoal-800 text-sm">Wish Foam &amp; Furnishing Co</span>
+                <span>&copy; 2026 All Rights Reserved.</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-5">
+                <a href="#" class="hover:text-charcoal-800 transition-colors">Shipping Policy</a>
+                <a href="#" class="hover:text-charcoal-800 transition-colors">10-Year Foam Warranty</a>
+                <a href="#" class="hover:text-charcoal-800 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-charcoal-800 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Return Request Modal (Replaces alert/confirm with clean UI) -->
+    <div id="returnModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-charcoal-800/60 backdrop-blur-xs p-4">
+        <div class="bg-white rounded-2xl border border-cream-200 max-w-md w-full p-6 sm:p-7 shadow-xl relative animate-fadeIn">
+            <button onclick="closeReturnModal()" aria-label="Close modal" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-cream-100 hover:bg-cream-200 flex items-center justify-center text-charcoal-600 transition-colors cursor-pointer">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+
+            <div id="modalFormContainer">
+                <div class="w-10 h-10 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center mb-4">
+                    <i data-lucide="package-open" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-semibold text-charcoal-800">Start a Return or Exchange</h3>
+                <p class="text-sm text-charcoal-600 mt-1 mb-5">
+                    Enter your order details below to generate an instant Return Merchandise Authorization (RMA).
+                </p>
+
+                <form onsubmit="handleReturnSubmit(event)" class="space-y-4">
+                    <div>
+                        <label for="orderId" class="block text-xs font-semibold uppercase tracking-wider text-charcoal-600 mb-1.5">Order Number</label>
+                        <input type="text" id="orderId" required placeholder="e.g., WFF-84920" class="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-cream-200 text-sm text-charcoal-800 focus:outline-none focus:border-terracotta-500">
+                    </div>
+
+                    <div>
+                        <label for="customerEmail" class="block text-xs font-semibold uppercase tracking-wider text-charcoal-600 mb-1.5">Email Address</label>
+                        <input type="email" id="customerEmail" required placeholder="you@example.com" class="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-cream-200 text-sm text-charcoal-800 focus:outline-none focus:border-terracotta-500">
+                    </div>
+
+                    <div>
+                        <label for="returnReason" class="block text-xs font-semibold uppercase tracking-wider text-charcoal-600 mb-1.5">Request Type</label>
+                        <select id="returnReason" class="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-cream-200 text-sm text-charcoal-800 focus:outline-none focus:border-terracotta-500">
+                            <option value="standard">30-Day Furnishing Return</option>
+                            <option value="mattress">100-Night Mattress Sleep Trial Return</option>
+                            <option value="exchange">Size / Firmness / Color Exchange</option>
+                            <option value="damaged">Report Damaged or Defective Item</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 px-4 bg-charcoal-800 hover:bg-terracotta-600 text-cream-50 text-sm font-semibold rounded-xl transition-colors cursor-pointer mt-2">
+                        Submit Return Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- Confirmation Message Box -->
+            <div id="modalSuccessContainer" class="hidden text-center py-4">
+                <div class="w-12 h-12 rounded-full bg-sage-100 text-sage-600 flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-semibold text-charcoal-800">Request Received</h3>
+                <p class="text-sm text-charcoal-600 mt-2 leading-relaxed">
+                    Thank you! We have logged your request for order <strong id="confirmedOrderId" class="text-charcoal-800"></strong>. Our care team will email your prepaid return label and pickup details within 24 hours.
+                </p>
+                <button onclick="closeReturnModal()" class="mt-6 w-full py-2.5 px-4 bg-sage-600 hover:bg-sage-500 text-white text-sm font-semibold rounded-xl transition-colors cursor-pointer">
+                    Back to Policy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Icons and Interactive Modal Logic -->
+    <script>
+        // Render Lucide icons
+        lucide.createIcons();
+
+        const modal = document.getElementById('returnModal');
+        const formContainer = document.getElementById('modalFormContainer');
+        const successContainer = document.getElementById('modalSuccessContainer');
+
+        function openReturnModal() {
+            formContainer.classList.remove('hidden');
+            successContainer.classList.add('hidden');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeReturnModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleReturnSubmit(event) {
+            event.preventDefault();
+            const orderVal = document.getElementById('orderId').value.trim();
+            document.getElementById('confirmedOrderId').textContent = orderVal || 'your order';
+            formContainer.classList.add('hidden');
+            successContainer.classList.remove('hidden');
+            event.target.reset();
+        }
+
+        // Close modal when clicking backdrop
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeReturnModal();
+            }
+        });
+    </script>
+</body>
+</html>
